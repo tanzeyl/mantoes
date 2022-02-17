@@ -52,7 +52,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">Leather Football Grain:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['leatherFootballGrain'] ?>&nbspDm</p>
 								</center>
@@ -68,7 +68,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">Leather Lining Split CG:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['leatherLiningSplitCG'] ?>&nbspDm</p>
 								</center>
@@ -84,7 +84,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">CG Thoker Grain:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['CGThokerGrain'] ?>&nbspDm</p>
 								</center>
@@ -100,7 +100,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">Leather Crust Swead Split:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['leatherCrustSweadSplit'] ?>&nbspDm</p>
 								</center>
@@ -116,7 +116,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">PU Cloth:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['PUCloth'] ?>&nbspm</p>
 								</center>
@@ -132,7 +132,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">Lycra Cloth with 3mm Foam:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['lycraClothWith3mmFoam'] ?>&nbspm</p>
 								</center>
@@ -148,7 +148,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">Liberty Cloth with 3mm Foam:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['libertyClothWith3mmFoam'] ?>&nbspm</p>
 								</center>
@@ -164,7 +164,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">8 mm Foam For Counter:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['8mmFoamForCounter'] ?>&nbspsheets</p>
 								</center>
@@ -180,7 +180,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">8mm Foam For Collar Band:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['8mmFoamForCollarBand'] ?>&nbspsheets</p>
 								</center>
@@ -196,7 +196,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">1 inch Halter Nivaad:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['1inchHalterNivaad'] ?>&nbspKGs</p>
 								</center>
@@ -212,7 +212,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">2 inch Nivaad W:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['2inchNivaadW'] ?>&nbspKGs</p>
 								</center>
@@ -228,7 +228,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">19 mm Tung Binding:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['19mmTungBinding'] ?>&nbspKGs</p>
 								</center>
@@ -244,7 +244,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">600mm Eyelet:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['600mmEyelet'] ?>&nbsppieces</p>
 								</center>
@@ -260,7 +260,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">Hook:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['hook'] ?>&nbsppieces</p>
 								</center>
@@ -276,7 +276,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">7mm Jam Button:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['7mmJamButton'] ?>&nbsppieces</p>
 								</center>
@@ -292,7 +292,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">150cm Shoe Lace:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['150cmShoeLace'] ?>&nbsppairs</p>
 								</center>
@@ -308,7 +308,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">100cm Shoe Lace:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['100cmShoeLace'] ?>&nbsppairs</p>
 								</center>
@@ -324,7 +324,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">1.8mm TP Sheet:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['1.8mmTPSheet'] ?>&nbspsheets</p>
 								</center>
@@ -340,7 +340,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">3.5mm Leather Board Banwar:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['3.5mmLeatherBoardBanwar'] ?>&nbspsheets</p>
 								</center>
@@ -356,7 +356,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">13mm Tingle:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['13mmTingle'] ?>&nbspsheets</p>
 								</center>
@@ -372,7 +372,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">Softner:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['softner'] ?>&nbsplitres</p>
 								</center>
@@ -388,7 +388,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">3mm Socks:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['3mmSocks'] ?>&nbspm</p>
 								</center>
@@ -404,7 +404,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">Heel:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['heel'] ?>&nbsppieces</p>
 								</center>
@@ -420,7 +420,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">Galli:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['galli'] ?>&nbsppieces</p>
 								</center>
@@ -436,7 +436,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">Kachcha Solution for closing:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['kachchaSolutionForClosing'] ?>&nbsplitres</p>
 								</center>
@@ -452,7 +452,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">Pakka Solution For Closing:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['pakkaSolutionForClosing'] ?>&nbsplitres</p>
 								</center>
@@ -468,7 +468,7 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							<div class="col-xs-3">
 								<b style="font-size: 20px;">Solution for Moulding:</b>
 							</div>
-							<div class="col-xs-4 col-xs-offset-3">
+							<div class="col-xs-4 col-xs-offset-2">
 								<center>
 									<p style="font-size: 20px;"><?php echo $row['solutionForMoulding'] ?>&nbsplitres</p>
 								</center>
