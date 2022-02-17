@@ -13,7 +13,7 @@
 
 <body style="background: url(../public/pic/background9.jpg) center; font-family: 'Times New Roman', Times, serif;">
 	<?php
-	include '../includes/header.php';
+	include 'includes/header.php';
 	?>
 	<div class="row">
 		<div class="col-xs-12">
@@ -33,7 +33,7 @@
 	</div>
 	<br><br><br><br>
 	<?php
-	include '../includes/footer.php';
+	include 'includes/footer.php';
 	?>
 </body>
 
