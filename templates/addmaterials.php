@@ -136,6 +136,26 @@ session_start();
 						<div class="form-group">
 							<input style="font-size: 20px;" type="text" name="100cmShoeLace" class="form-control" value=0 placeholder="Enter number of pieces.">
 						</div>
+						<b style="font-size: 30px;">Paper Band + Tag:</b>
+						<div class="form-group">
+							<input style="font-size: 20px;" type="text" name="paperBandAndTag" class="form-control" value=0 placeholder="Enter number of pieces.">
+						</div>
+						<b style="font-size: 30px;">Polyethene Bag:</b>
+						<div class="form-group">
+							<input style="font-size: 20px;" type="text" name="polyetheneBag" class="form-control" value=0 placeholder="Enter number of pieces.">
+						</div>
+						<b style="font-size: 30px;">Polyethene Bag (white):</b>
+						<div class="form-group">
+							<input style="font-size: 20px;" type="text" name="polyetheneBagWhite" class="form-control" value=0 placeholder="Enter in KGs.">
+						</div>
+						<b style="font-size: 30px;">Carton:</b>
+						<div class="form-group">
+							<input style="font-size: 20px;" type="text" name="carton" class="form-control" value=0 placeholder="Enter number of pieces.">
+						</div>
+						<b style="font-size: 30px;">Jhall:</b>
+						<div class="form-group">
+							<input style="font-size: 20px;" type="text" name="jhall" class="form-control" value=0 placeholder="Enter number of pieces.">
+						</div>
 						<button class="btn btn-default btn-block" style="color: white; background: #1e6f72; font-size: 30px;">Update</button><br>
 					</form>
 				</div>
