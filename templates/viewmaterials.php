@@ -54,7 +54,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['leatherFootballGrain'] ?>&nbspDm</p>
+									<?php
+									if ($row['leatherFootballGrain'] <= 10000) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['leatherFootballGrain'] ?>&nbspDm</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['leatherFootballGrain'] ?>&nbspDm</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -70,7 +80,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['leatherLiningSplitCG'] ?>&nbspDm</p>
+									<?php
+									if ($row['leatherLiningSplitCG'] <= 3000) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['leatherLiningSplitCG'] ?>&nbspDm</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['leatherLiningSplitCG'] ?>&nbspDm</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -86,7 +106,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['CGThokerGrain'] ?>&nbspDm</p>
+									<?php
+									if ($row['CGThokerGrain'] <= 3000) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['CGThokerGrain'] ?>&nbspDm</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['CGThokerGrain'] ?>&nbspDm</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -102,7 +132,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['leatherCrustSweadSplit'] ?>&nbspDm</p>
+									<?php
+									if ($row['leatherCrustSweadSplit'] <= 5000) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['leatherCrustSweadSplit'] ?>&nbspDm</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['leatherCrustSweadSplit'] ?>&nbspDm</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -118,7 +158,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['PUCloth'] ?>&nbspm</p>
+									<?php
+									if ($row['PUCloth'] <= 100) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['PUCloth'] ?>&nbspm</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['PUCloth'] ?>&nbspm</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -134,7 +184,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['lycraClothWith3mmFoam'] ?>&nbspm</p>
+									<?php
+									if ($row['lycraClothWith3mmFoam'] <= 50) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['lycraClothWith3mmFoam'] ?>&nbspm</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['lycraClothWith3mmFoam'] ?>&nbspm</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -150,7 +210,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['libertyClothWith3mmFoam'] ?>&nbspm</p>
+									<?php
+									if ($row['libertyClothWith3mmFoam'] <= 50) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['libertyClothWith3mmFoam'] ?>&nbspm</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['libertyClothWith3mmFoam'] ?>&nbspm</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -166,7 +236,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['8mmFoamForCounter'] ?>&nbspsheets</p>
+									<?php
+									if ($row['8mmFoamForCounter'] <= 25) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['8mmFoamForCounter'] ?>&nbspsheets</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['8mmFoamForCounter'] ?>&nbspsheets</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -178,11 +258,21 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 						<hr style="border: 2px solid black;">
 						<div class="row">
 							<div class="col-xs-3">
-								<b style="font-size: 20px;">8mm Foam For Collar Band:</b>
+								<b style="font-size: 20px;">15mm Foam For Collar Band:</b>
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['8mmFoamForCollarBand'] ?>&nbspsheets</p>
+									<?php
+									if ($row['15mmFoamForCollarBand'] <= 5) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['15mmFoamForCollarBand'] ?>&nbspsheets</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['15mmFoamForCollarBand'] ?>&nbspsheets</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -198,7 +288,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['1inchHalterNivaad'] ?>&nbspKGs</p>
+									<?php
+									if ($row['1inchHalterNivaad'] <= 80) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['1inchHalterNivaad'] ?>&nbspKGs</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['1inchHalterNivaad'] ?>&nbspKGs</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -214,7 +314,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['2inchNivaadW'] ?>&nbspKGs</p>
+									<?php
+									if ($row['2inchNivaadW'] <= 80) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['2inchNivaadW'] ?>&nbspKGs</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['2inchNivaadW'] ?>&nbspKGs</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -230,7 +340,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['19mmTungBinding'] ?>&nbspKGs</p>
+									<?php
+									if ($row['19mmTungBinding'] <= 80) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['19mmTungBinding'] ?>&nbspKGs</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['19mmTungBinding'] ?>&nbspKGs</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -246,7 +366,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['600mmEyelet'] ?>&nbsppieces</p>
+									<?php
+									if ($row['600mmEyelet'] <= 10000) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['600mmEyelet'] ?>&nbsppieces</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['600mmEyelet'] ?>&nbsppieces</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -262,7 +392,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['hook'] ?>&nbsppieces</p>
+									<?php
+									if ($row['hook'] <= 8000) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['hook'] ?>&nbsppieces</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['hook'] ?>&nbsppieces</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -278,7 +418,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['7mmJamButton'] ?>&nbsppieces</p>
+									<?php
+									if ($row['7mmJamButton'] <= 2000) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['7mmJamButton'] ?>&nbsppieces</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['7mmJamButton'] ?>&nbsppieces</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -294,7 +444,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['150cmShoeLace'] ?>&nbsppairs</p>
+									<?php
+									if ($row['150cmShoeLace'] <= 500) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['150cmShoeLace'] ?>&nbsppairs</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['150cmShoeLace'] ?>&nbsppairs</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -310,7 +470,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['100cmShoeLace'] ?>&nbsppairs</p>
+									<?php
+									if ($row['100cmShoeLace'] <= 500) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['100cmShoeLace'] ?>&nbsppairs</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['100cmShoeLace'] ?>&nbsppairs</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -326,7 +496,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['1.8mmTPSheet'] ?>&nbspsheets</p>
+									<?php
+									if ($row['1.8mmTPSheet'] <= 10) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['1.8mmTPSheet'] ?>&nbspsheets</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['1.8mmTPSheet'] ?>&nbspsheets</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -342,7 +522,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['3.5mmLeatherBoardBanwar'] ?>&nbspsheets</p>
+									<?php
+									if ($row['3.5mmLeatherBoardBanwar'] <= 25) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['3.5mmLeatherBoardBanwar'] ?>&nbspsheets</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['3.5mmLeatherBoardBanwar'] ?>&nbspsheets</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -358,7 +548,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['13mmTingle'] ?>&nbspsheets</p>
+									<?php
+									if ($row['13mmTingle'] <= 20) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['13mmTingle'] ?>&nbspboxes</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['13mmTingle'] ?>&nbspboxes</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -374,7 +574,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['softner'] ?>&nbsplitres</p>
+									<?php
+									if ($row['softner'] <= 20) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['softner'] ?>&nbsplitres</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['softner'] ?>&nbsplitres</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -390,7 +600,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['3mmSocks'] ?>&nbspm</p>
+									<?php
+									if ($row['3mmSocks'] <= 20) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['3mmSocks'] ?>&nbspm</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['3mmSocks'] ?>&nbspm</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -406,7 +626,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['heel'] ?>&nbsppieces</p>
+									<?php
+									if ($row['heel'] <= 500) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['heel'] ?>&nbsppairs</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['heel'] ?>&nbsppairs</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -422,7 +652,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['galli'] ?>&nbsppieces</p>
+									<?php
+									if ($row['galli'] <= 500) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['galli'] ?>&nbsppairs</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['galli'] ?>&nbsppairs</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -438,7 +678,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['kachchaSolutionForClosing'] ?>&nbsplitres</p>
+									<?php
+									if ($row['kachchaSolutionForClosing'] <= 40) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['kachchaSolutionForClosing'] ?>&nbsplitres</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['kachchaSolutionForClosing'] ?>&nbsplitres</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -454,7 +704,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['pakkaSolutionForClosing'] ?>&nbsplitres</p>
+									<?php
+									if ($row['pakkaSolutionForClosing'] <= 50) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['pakkaSolutionForClosing'] ?>&nbsplitres</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['pakkaSolutionForClosing'] ?>&nbsplitres</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -470,7 +730,17 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 							</div>
 							<div class="col-xs-4 col-xs-offset-2">
 								<center>
-									<p style="font-size: 20px;"><?php echo $row['solutionForMoulding'] ?>&nbsplitres</p>
+									<?php
+									if ($row['solutionForMoulding'] <= 50) {
+									?>
+										<p style="font-size: 20px; color: red;"><?php echo $row['solutionForMoulding'] ?>&nbsplitres</p>
+									<?php
+									} else {
+									?>
+										<p style="font-size: 20px;"><?php echo $row['solutionForMoulding'] ?>&nbsplitres</p>
+									<?php
+									}
+									?>
 								</center>
 							</div>
 							<div class="col-xs-2">
@@ -488,51 +758,6 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 			</div>
 		</div>
 		<br><br>
-		<div class="row">
-			<div class="col-xs-12 col-md-8 col-md-offset-2">
-				<div class="alert alert-danger" role="alert">
-					<ol style="margin-left: 5px;">
-						<?php
-						if ($row['dal'] <= 0.2) {
-						?>
-							<li style="font-size: 20px;">
-								You need to buy Dal.
-							</li>
-						<?php
-						}
-						?>
-						<?php
-						if ($row['rice'] <= 0.2) {
-						?>
-							<li style="font-size: 20px;">
-								You need to buy Rice.
-							</li>
-						<?php
-						}
-						?>
-						<?php
-						if ($row['salt'] <= 0.2) {
-						?>
-							<li style="font-size: 20px;">
-								You need to buy Salt.
-							</li>
-						<?php
-						}
-						?>
-						<?php
-						if ($row['pepper'] <= 0.2) {
-						?>
-							<li style="font-size: 20px;">
-								You need to buy Pepper.
-							</li>
-						<?php
-						}
-						?>
-					</ol>
-				</div>
-			</div>
-		</div>
-		<br>
 		<?php
 		include '../includes/footer.php';
 		session_destroy();

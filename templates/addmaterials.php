@@ -60,9 +60,9 @@ session_start();
 						<div class="form-group">
 							<input style="font-size: 20px;" type="text" name="8mmFoamForCounter" class="form-control" value=0 placeholder="Enter number of sheets.">
 						</div>
-						<b style="font-size: 30px;">8mm Foam for Collar Band:</b>
+						<b style="font-size: 30px;">15mm Foam for Collar Band:</b>
 						<div class="form-group">
-							<input style="font-size: 20px;" type="text" name="8mmFoamForCollarBand" class="form-control" value=0 placeholder="Enter number of sheets.">
+							<input style="font-size: 20px;" type="text" name="15mmFoamForCollarBand" class="form-control" value=0 placeholder="Enter number of sheets.">
 						</div>
 						<b style="font-size: 30px;">1 inch Halter Nivaad:</b>
 						<div class="form-group">

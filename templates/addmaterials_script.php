@@ -10,7 +10,7 @@ $PUCloth = mysqli_real_escape_string($con, $_POST['PUCloth']);
 $lycraClothWith3mmFoam = mysqli_real_escape_string($con, $_POST['lycraClothWith3mmFoam']);
 $libertyClothWith3mmFoam = mysqli_real_escape_string($con, $_POST['libertyClothWith3mmFoam']);
 $_8mmFoamForCounter = mysqli_real_escape_string($con, $_POST['8mmFoamForCounter']);
-$_8mmFoamForCollarBand = mysqli_real_escape_string($con, $_POST['8mmFoamForCollarBand']);
+$_15mmFoamForCollarBand = mysqli_real_escape_string($con, $_POST['15mmFoamForCollarBand']);
 $_1inchHalterNivaad = mysqli_real_escape_string($con, $_POST['1inchHalterNivaad']);
 $_2inchNivaadW = mysqli_real_escape_string($con, $_POST['2inchNivaadW']);
 $_19mmTungBinding = mysqli_real_escape_string($con, $_POST['19mmTungBinding']);
@@ -42,7 +42,7 @@ $PUCloth = $row['PUCloth'] + $PUCloth;
 $lycraClothWith3mmFoam = $row['lycraClothWith3mmFoam'] + $lycraClothWith3mmFoam;
 $libertyClothWith3mmFoam = $row['libertyClothWith3mmFoam'] + $libertyClothWith3mmFoam;
 $_8mmFoamForCounter = $row['8mmFoamForCounter'] + $_8mmFoamForCounter;
-$_8mmFoamForCollarBand = $row['8mmFoamForCollarBand'] + $_8mmFoamForCollarBand;
+$_15mmFoamForCollarBand = $row['15mmFoamForCollarBand'] + $_15mmFoamForCollarBand;
 $_1inchHalterNivaad = $row['1inchHalterNivaad'] + $_1inchHalterNivaad;
 $_2inchNivaadW = $row['2inchNivaadW'] + $_2inchNivaadW;
 $_19mmTungBinding = $row['19mmTungBinding'] + $_19mmTungBinding;
@@ -65,7 +65,7 @@ $_100cmShoeLace = $row['100cmShoeLace'] + $_100cmShoeLace;
 $add_q = "UPDATE `rawmaterial` SET `leatherFootballGrain` = '$leatherFootballGrain', `leatherLiningSplitCG` =
 '$leatherLiningSplitCG', `CGThokerGRain` = '$CGThokerGrain', `leatherCrustSweadSplit` = '$leatherCrustSweadSplit', `PUCloth` =
 '$PUCloth', `lycraClothWith3mmFoam` = '$lycraClothWith3mmFoam', `libertyClothWith3mmFoam` = '$libertyClothWith3mmFoam',
-`8mmFoamForCounter` = '$_8mmFoamForCounter', `8mmFoamForCollarBand` = '$_8mmFoamForCollarBand', `1inchHalterNivaad` =
+`8mmFoamForCounter` = '$_8mmFoamForCounter', `15mmFoamForCollarBand` = '$_15mmFoamForCollarBand', `1inchHalterNivaad` =
 '$_1inchHalterNivaad', `2inchNivaadW` = '$_2inchNivaadW', `19mmTungBinding` = '$_19mmTungBinding', `600mmEyelet` =
 '$_600mmEyelet', `hook` = '$hook', `7mmJamButton` = '$_7mmJamButton', `150cmShoeLace` = '$_150cmShoeLace', `1.8mmTPSheet` =
 '$_1_8mmTPSheet', `3.5mmLeatherBoardBanwar` = '$_3_5mmLeatherBoardBanwar', `13mmTingle` = '$_13mmTingle', `softner` = '$softner',

@@ -15,7 +15,7 @@ if ($type == "DVS Boot or Tactical Shoe") {
   $lycraClothWith3mmFoam = $row['lycraClothWith3mmFoam'] - 0.1 * $pairs;
   $libertyClothWith3mmFoam = $row['libertyClothWith3mmFoam'] - 0.1111 * $pairs;
   $_8mmFoamForCounter = $row['8mmFoamForCounter'] - 0.0454 * $pairs;
-  $_8mmFoamForCollarBand = $row['8mmFoamForCollarBand'] - 0.01 * $pairs;
+  $_15mmFoamForCollarBand = $row['15mmFoamForCollarBand'] - 0.01 * $pairs;
   $_1inchHalterNivaad = $row['1inchHalterNivaad'] - 0.5 * $pairs;
   $_2inchNivaadW = $row['2inchNivaadW'] - 0.5 * $pairs;
   $_19mmTungBinding = $row['19mmTungBinding'] - 0.5 * $pairs;
@@ -43,7 +43,7 @@ if ($type == "DVS Boot or Tactical Shoe") {
   $lycraClothWith3mmFoam = $row['lycraClothWith3mmFoam'] - 0.1 * $pairs;
   $libertyClothWith3mmFoam = $row['libertyClothWith3mmFoam'] - 0.1111 * $pairs;
   $_8mmFoamForCounter = $row['8mmFoamForCounter'] - 0.0454 * $pairs;
-  $_8mmFoamForCollarBand = $row['8mmFoamForCollarBand'] - 0.01 * $pairs;
+  $_15mmFoamForCollarBand = $row['15mmFoamForCollarBand'] - 0.01 * $pairs;
   $_1inchHalterNivaad = $row['1inchHalterNivaad'] - 0.5 * $pairs;
   $_2inchNivaadW = $row['2inchNivaadW'] - 0.5 * $pairs;
   $_19mmTungBinding = $row['19mmTungBinding'] - 0.5 * $pairs;
@@ -66,7 +66,7 @@ if ($type == "DVS Boot or Tactical Shoe") {
 $update_q = "UPDATE `rawmaterial` SET `leatherFootballGrain` = '$leatherFootballGrain', `leatherLiningSplitCG` =
 '$leatherLiningSplitCG', `CGThokerGRain` = '$CGThokerGrain', `leatherCrustSweadSplit` = '$leatherCrustSweadSplit', `PUCloth` =
 '$PUCloth', `lycraClothWith3mmFoam` = '$lycraClothWith3mmFoam', `libertyClothWith3mmFoam` = '$libertyClothWith3mmFoam',
-`8mmFoamForCounter` = '$_8mmFoamForCounter', `8mmFoamForCollarBand` = '$_8mmFoamForCollarBand', `1inchHalterNivaad` =
+`8mmFoamForCounter` = '$_8mmFoamForCounter', `15mmFoamForCollarBand` = '$_15mmFoamForCollarBand', `1inchHalterNivaad` =
 '$_1inchHalterNivaad', `2inchNivaadW` = '$_2inchNivaadW', `19mmTungBinding` = '$_19mmTungBinding', `600mmEyelet` =
 '$_600mmEyelet', `hook` = '$hook', `7mmJamButton` = '$_7mmJamButton', `150cmShoeLace` = '$_150cmShoeLace', `1.8mmTPSheet` =
 '$_1_8mmTPSheet', `3.5mmLeatherBoardBanwar` = '$_3_5mmLeatherBoardBanwar', `13mmTingle` = '$_13mmTingle', `softner` = '$softner',
