@@ -40,7 +40,7 @@
 						<center>
 							<div id="banner-content" style="border: 4px solid cyan; border-radius: 50%; background-color: rgba(0, 0, 0, 0.7);">
 								<h1 style="color: white;">Welcome to Mantoes!</h1><br>
-								<a href="viewmaterials.php" class="”btn btn-info btn-lg active">View Materials</a>
+								<a href="templates/viewmaterials.php" class="”btn btn-info btn-lg active">View Materials</a>
 							</div>
 						</center>
 					</div>
