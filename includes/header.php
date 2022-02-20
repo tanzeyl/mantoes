@@ -10,8 +10,9 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav navbar-right">
-				<li style="font-size: 20px;"><a href="checkout.php" style="color: white;">Checkout shoes</a></li>
-				<li style="font-size: 20px;"><a href="viewmaterials.php" style="color: white;">View available material</a></li>
+				<li style="font-size: 20px;"><a href="checkout.php" style="color: white;">Checkout</a></li>
+				<li style="font-size: 20px;"><a href="viewmaterials.php" style="color: white;">Available material</a></li>
+				<li style="font-size: 20px;"><a href="change_prices.php" style="color: white;">Prices</a></li>
 			</ul>
 		</div>
 	</div>

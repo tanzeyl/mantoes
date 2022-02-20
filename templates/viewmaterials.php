@@ -749,143 +749,248 @@ $view_q_res = mysqli_query($con, $view_q) or die(mysqli_error($con));
 								</form>
 							</div>
 						</div>
-						<hr style="border: 2px solid black;">
-						<div class="row">
-							<div class="col-xs-3">
-								<b style="font-size: 20px;">Paper Band + Tag:</b>
-							</div>
-							<div class="col-xs-4 col-xs-offset-2">
-								<center>
-									<?php
-									if ($row['paperBandAndTag'] <= 1000) {
-									?>
-										<p style="font-size: 20px; color: red;"><?php echo $row['paperBandAndTag'] ?>&nbsppieces</p>
-									<?php
-									} else {
-									?>
-										<p style="font-size: 20px;"><?php echo $row['paperBandAndTag'] ?>&nbsppieces</p>
-									<?php
-									}
-									?>
-								</center>
-							</div>
-							<div class="col-xs-2">
-								<form method="POST" action="resetindividual_script.php">
-									<button class="btn btn-outline-danger" value="paperBandAndTag" name="column">Reset</button>
-								</form>
-							</div>
-						</div>
-						<hr style="border: 2px solid black;">
-						<div class="row">
-							<div class="col-xs-3">
-								<b style="font-size: 20px;">Polyethene Bag:</b>
-							</div>
-							<div class="col-xs-4 col-xs-offset-2">
-								<center>
-									<?php
-									if ($row['polyetheneBag'] <= 500) {
-									?>
-										<p style="font-size: 20px; color: red;"><?php echo $row['polyetheneBag'] ?>&nbsppieces</p>
-									<?php
-									} else {
-									?>
-										<p style="font-size: 20px;"><?php echo $row['polyetheneBag'] ?>&nbsppieces</p>
-									<?php
-									}
-									?>
-								</center>
-							</div>
-							<div class="col-xs-2">
-								<form method="POST" action="resetindividual_script.php">
-									<button class="btn btn-outline-danger" value="polyetheneBag" name="column">Reset</button>
-								</form>
-							</div>
-						</div>
-						<hr style="border: 2px solid black;">
-						<div class="row">
-							<div class="col-xs-3">
-								<b style="font-size: 20px;">Polyethene Bag (White):</b>
-							</div>
-							<div class="col-xs-4 col-xs-offset-2">
-								<center>
-									<?php
-									if ($row['polyetheneBagWhite'] <= 10) {
-									?>
-										<p style="font-size: 20px; color: red;"><?php echo $row['polyetheneBagWhite'] ?>&nbspKGs</p>
-									<?php
-									} else {
-									?>
-										<p style="font-size: 20px;"><?php echo $row['polyetheneBagWhite'] ?>&nbspKGs</p>
-									<?php
-									}
-									?>
-								</center>
-							</div>
-							<div class="col-xs-2">
-								<form method="POST" action="resetindividual_script.php">
-									<button class="btn btn-outline-danger" value="polyetheneBagWhite" name="column">Reset</button>
-								</form>
-							</div>
-						</div>
-						<hr style="border: 2px solid black;">
-						<div class="row">
-							<div class="col-xs-3">
-								<b style="font-size: 20px;">Carton:</b>
-							</div>
-							<div class="col-xs-4 col-xs-offset-2">
-								<center>
-									<?php
-									if ($row['carton'] <= 15) {
-									?>
-										<p style="font-size: 20px; color: red;"><?php echo $row['carton'] ?>&nbsppieces</p>
-									<?php
-									} else {
-									?>
-										<p style="font-size: 20px;"><?php echo $row['carton'] ?>&nbsppieces</p>
-									<?php
-									}
-									?>
-								</center>
-							</div>
-							<div class="col-xs-2">
-								<form method="POST" action="resetindividual_script.php">
-									<button class="btn btn-outline-danger" value="carton" name="column">Reset</button>
-								</form>
-							</div>
-						</div>
-						<hr style="border: 2px solid black;">
-						<div class="row">
-							<div class="col-xs-3">
-								<b style="font-size: 20px;">Jhall:</b>
-							</div>
-							<div class="col-xs-4 col-xs-offset-2">
-								<center>
-									<?php
-									if ($row['jhall'] <= 10) {
-									?>
-										<p style="font-size: 20px; color: red;"><?php echo $row['jhall'] ?>&nbsppieces</p>
-									<?php
-									} else {
-									?>
-										<p style="font-size: 20px;"><?php echo $row['jhall'] ?>&nbsppieces</p>
-									<?php
-									}
-									?>
-								</center>
-							</div>
-							<div class="col-xs-2">
-								<form method="POST" action="resetindividual_script.php">
-									<button class="btn btn-outline-danger" value="jhall" name="column">Reset</button>
-								</form>
-							</div>
-						</div>
-						<a href="addmaterials.php"><button class="btn btn-block" style="background: #1e6f72; color: white; font-size: 30px;">Update materials</button></a>
-						<hr>
-						<a href="checkout.php"><button class="btn btn-block" style="background: #1e6f72; color: white; font-size: 30px;">Checkout Shoes</button></a>
 					</div>
+					<hr style="border: 2px solid black;">
+					<div class="row">
+						<div class="col-xs-3">
+							<b style="font-size: 20px;">Polyethene Bag:</b>
+						</div>
+						<div class="col-xs-4 col-xs-offset-2">
+							<center>
+								<?php
+								if ($row['polyetheneBag'] <= 500) {
+								?>
+									<p style="font-size: 20px; color: red;"><?php echo $row['polyetheneBag'] ?>&nbsppieces</p>
+								<?php
+								} else {
+								?>
+									<p style="font-size: 20px;"><?php echo $row['polyetheneBag'] ?>&nbsppieces</p>
+								<?php
+								}
+								?>
+							</center>
+						</div>
+						<div class="col-xs-2">
+							<form method="POST" action="resetindividual_script.php">
+								<button class="btn btn-outline-danger" value="polyetheneBag" name="column">Reset</button>
+							</form>
+						</div>
+					</div>
+					<hr style="border: 2px solid black;">
+					<div class="row">
+						<div class="col-xs-3">
+							<b style="font-size: 20px;">Polyethene Bag (White):</b>
+						</div>
+						<div class="col-xs-4 col-xs-offset-2">
+							<center>
+								<?php
+								if ($row['polyetheneBagWhite'] <= 10) {
+								?>
+									<p style="font-size: 20px; color: red;"><?php echo $row['polyetheneBagWhite'] ?>&nbspKGs</p>
+								<?php
+								} else {
+								?>
+									<p style="font-size: 20px;"><?php echo $row['polyetheneBagWhite'] ?>&nbspKGs</p>
+								<?php
+								}
+								?>
+							</center>
+						</div>
+						<div class="col-xs-2">
+							<form method="POST" action="resetindividual_script.php">
+								<button class="btn btn-outline-danger" value="polyetheneBagWhite" name="column">Reset</button>
+							</form>
+						</div>
+					</div>
+					<hr style="border: 2px solid black;">
+					<div class="row">
+						<div class="col-xs-3">
+							<b style="font-size: 20px;">Carton:</b>
+						</div>
+						<div class="col-xs-4 col-xs-offset-2">
+							<center>
+								<?php
+								if ($row['carton'] <= 15) {
+								?>
+									<p style="font-size: 20px; color: red;"><?php echo $row['carton'] ?>&nbsppieces</p>
+								<?php
+								} else {
+								?>
+									<p style="font-size: 20px;"><?php echo $row['carton'] ?>&nbsppieces</p>
+								<?php
+								}
+								?>
+							</center>
+						</div>
+						<div class="col-xs-2">
+							<form method="POST" action="resetindividual_script.php">
+								<button class="btn btn-outline-danger" value="carton" name="column">Reset</button>
+							</form>
+						</div>
+					</div>
+					<hr style="border: 2px solid black;">
+					<div class="row">
+						<div class="col-xs-3">
+							<b style="font-size: 20px;">Jhall:</b>
+						</div>
+						<div class="col-xs-4 col-xs-offset-2">
+							<center>
+								<?php
+								if ($row['jhall'] <= 10) {
+								?>
+									<p style="font-size: 20px; color: red;"><?php echo $row['jhall'] ?>&nbsppieces</p>
+								<?php
+								} else {
+								?>
+									<p style="font-size: 20px;"><?php echo $row['jhall'] ?>&nbsppieces</p>
+								<?php
+								}
+								?>
+							</center>
+						</div>
+						<div class="col-xs-2">
+							<form method="POST" action="resetindividual_script.php">
+								<button class="btn btn-outline-danger" value="jhall" name="column">Reset</button>
+							</form>
+						</div>
+					</div>
+					<hr style="border: 2px solid black;">
+					<div class="row">
+						<div class="col-xs-3">
+							<b style="font-size: 20px;">Side Rubber Sticker:</b>
+						</div>
+						<div class="col-xs-4 col-xs-offset-2">
+							<center>
+								<?php
+								if ($row['sideRubberSticker'] <= 1000) {
+								?>
+									<p style="font-size: 20px; color: red;"><?php echo $row['sideRubberSticker'] ?>&nbsppieces</p>
+								<?php
+								} else {
+								?>
+									<p style="font-size: 20px;"><?php echo $row['sideRubberSticker'] ?>&nbsppieces</p>
+								<?php
+								}
+								?>
+							</center>
+						</div>
+						<div class="col-xs-2">
+							<form method="POST" action="resetindividual_script.php">
+								<button class="btn btn-outline-danger" value="sideRubberSticker" name="column">Reset</button>
+							</form>
+						</div>
+					</div>
+					<hr style="border: 2px solid black;">
+					<div class="row">
+						<div class="col-xs-3">
+							<b style="font-size: 20px;">Heel Rubber Sticker:</b>
+						</div>
+						<div class="col-xs-4 col-xs-offset-2">
+							<center>
+								<?php
+								if ($row['heelRubberSticker'] <= 1000) {
+								?>
+									<p style="font-size: 20px; color: red;"><?php echo $row['heelRubberSticker'] ?>&nbsppieces</p>
+								<?php
+								} else {
+								?>
+									<p style="font-size: 20px;"><?php echo $row['heelRubberSticker'] ?>&nbsppieces</p>
+								<?php
+								}
+								?>
+							</center>
+						</div>
+						<div class="col-xs-2">
+							<form method="POST" action="resetindividual_script.php">
+								<button class="btn btn-outline-danger" value="heelRubberSticker" name="column">Reset</button>
+							</form>
+						</div>
+					</div>
+					<hr style="border: 2px solid black;">
+					<div class="row">
+						<div class="col-xs-3">
+							<b style="font-size: 20px;">Tung Cloth Sticker:</b>
+						</div>
+						<div class="col-xs-4 col-xs-offset-2">
+							<center>
+								<?php
+								if ($row['tungClothSticker'] <= 1000) {
+								?>
+									<p style="font-size: 20px; color: red;"><?php echo $row['tungClothSticker'] ?>&nbsppieces</p>
+								<?php
+								} else {
+								?>
+									<p style="font-size: 20px;"><?php echo $row['tungClothSticker'] ?>&nbsppieces</p>
+								<?php
+								}
+								?>
+							</center>
+						</div>
+						<div class="col-xs-2">
+							<form method="POST" action="resetindividual_script.php">
+								<button class="btn btn-outline-danger" value="tungClothSticker" name="column">Reset</button>
+							</form>
+						</div>
+					</div>
+					<hr style="border: 2px solid black;">
+					<div class="row">
+						<div class="col-xs-3">
+							<b style="font-size: 20px;">Paper Band:</b>
+						</div>
+						<div class="col-xs-4 col-xs-offset-2">
+							<center>
+								<?php
+								if ($row['paperBand'] <= 1000) {
+								?>
+									<p style="font-size: 20px; color: red;"><?php echo $row['paperBand'] ?>&nbsppieces</p>
+								<?php
+								} else {
+								?>
+									<p style="font-size: 20px;"><?php echo $row['paperBand'] ?>&nbsppieces</p>
+								<?php
+								}
+								?>
+							</center>
+						</div>
+						<div class="col-xs-2">
+							<form method="POST" action="resetindividual_script.php">
+								<button class="btn btn-outline-danger" value="paperBand" name="column">Reset</button>
+							</form>
+						</div>
+					</div>
+					<hr style="border: 2px solid black;">
+					<div class="row">
+						<div class="col-xs-3">
+							<b style="font-size: 20px;">Paper Tag:</b>
+						</div>
+						<div class="col-xs-4 col-xs-offset-2">
+							<center>
+								<?php
+								if ($row['paperTag'] <= 1000) {
+								?>
+									<p style="font-size: 20px; color: red;"><?php echo $row['paperTag'] ?>&nbsppieces</p>
+								<?php
+								} else {
+								?>
+									<p style="font-size: 20px;"><?php echo $row['paperTag'] ?>&nbsppieces</p>
+								<?php
+								}
+								?>
+							</center>
+						</div>
+						<div class="col-xs-2">
+							<form method="POST" action="resetindividual_script.php">
+								<button class="btn btn-outline-danger" value="paperTag" name="column">Reset</button>
+							</form>
+						</div>
+					</div>
+					<a href="addmaterials.php"><button class="btn btn-block" style="background: #1e6f72; color: white; font-size: 30px;">Update materials</button></a>
+					<hr>
+					<a href="checkout.php"><button class="btn btn-block" style="background: #1e6f72; color: white; font-size: 30px;">Checkout Shoes</button></a>
 				</div>
-				<a href="reset_script.php"><button class="btn btn-block" style="background: #1e6f72; color: white; font-size: 30px;">Reset to zero</button></a>
 			</div>
+			<a href="reset_script.php"><button class="btn btn-block" style="background: #1e6f72; color: white; font-size: 30px;">Reset to zero</button></a>
+		</div>
 		</div>
 		<br><br>
 		<?php

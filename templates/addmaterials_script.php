@@ -33,11 +33,15 @@ $kachchaSolutionForClosing = mysqli_real_escape_string($con, $_POST['kachchaSolu
 $pakkaSolutionForClosing = mysqli_real_escape_string($con, $_POST['pakkaSolutionForClosing']);
 $solutionForMoulding = mysqli_real_escape_string($con, $_POST['solutionForMoulding']);
 $_100cmShoeLace = mysqli_real_escape_string($con, $_POST['100cmShoeLace']);
-$paperBandAndTag = mysqli_real_escape_string($con, $_POST['paperBandAndTag']);
 $polyetheneBag = mysqli_real_escape_string($con, $_POST['polyetheneBag']);
 $polyetheneBagWhite = mysqli_real_escape_string($con, $_POST['polyetheneBagWhite']);
 $carton = mysqli_real_escape_string($con, $_POST['carton']);
 $jhall = mysqli_real_escape_string($con, $_POST['jhall']);
+$sideRubberSticker = mysqli_real_escape_string($con, $_POST['sideRubberSticker']);
+$heelRubberSticker = mysqli_real_escape_string($con, $_POST['heelRubberSticker']);
+$tungClothSticker = mysqli_real_escape_string($con, $_POST['tungClothSticker']);
+$paperBand = mysqli_real_escape_string($con, $_POST['sideRubberSticker']);
+$paperTag = mysqli_real_escape_string($con, $_POST['sideRubberSticker']);
 
 $leatherFootballGrain = $row['leatherFootballGrain'] + $leatherFootballGrain;
 $leatherLiningSplitCG = $row['leatherLiningSplitCG'] + $leatherLiningSplitCG;
@@ -66,11 +70,16 @@ $kachchaSolutionForClosing = $row['kachchaSolutionForClosing'] + $kachchaSolutio
 $pakkaSolutionForClosing = $row['pakkaSolutionForClosing'] + $pakkaSolutionForClosing;
 $solutionForMoulding = $row['solutionForMoulding'] + $solutionForMoulding;
 $_100cmShoeLace = $row['100cmShoeLace'] + $_100cmShoeLace;
-$paperBandAndTag = $row['paperBandAndTag'] + $paperBandAndTag;
 $polyetheneBag = $row['polyetheneBag'] + $polyetheneBag;
 $polyetheneBagWhite = $row['polyetheneBagWhite'] + $polyetheneBagWhite;
 $carton = $row['carton'] + $carton;
 $jhall = $row['jhall'] + $jhall;
+$sideRubberSticker = $row['sideRubberSticker'] + $sideRubberSticker;
+$heelRubberSticker = $row['heelRubberSticker'] + $heelRubberSticker;
+$tungClothSticker = $row['tungClothSticker'] + $tungClothSticker;
+$paperBand = $row['paperBand'] + $paperBand;
+$paperTag = $row['paperTag'] + $paperTag;
+
 
 $add_q = "UPDATE `rawmaterial` SET `leatherFootballGrain` = '$leatherFootballGrain', `leatherLiningSplitCG` =
 '$leatherLiningSplitCG', `CGThokerGRain` = '$CGThokerGrain', `leatherCrustSweadSplit` = '$leatherCrustSweadSplit', `PUCloth` =
@@ -81,8 +90,10 @@ $add_q = "UPDATE `rawmaterial` SET `leatherFootballGrain` = '$leatherFootballGra
 '$_1_8mmTPSheet', `3.5mmLeatherBoardBanwar` = '$_3_5mmLeatherBoardBanwar', `13mmTingle` = '$_13mmTingle', `softner` = '$softner',
 `3mmSocks` = '$_3mmSocks', `heel` = '$heel', `galli` = '$galli', `kachchaSolutionForClosing` = '$kachchaSolutionForClosing',
 `pakkaSolutionForClosing` = '$pakkaSolutionForClosing', `solutionForMoulding` = '$solutionForMoulding', `100cmShoeLace` =
-'$_100cmShoeLace', `paperBandAndTag` = '$paperBandAndTag', `polyetheneBag` = '$polyetheneBag', `polyetheneBagWhite` =
-'$polyetheneBagWhite', `carton` = '$carton', `jhall` = '$jhall'";
+'$_100cmShoeLace', `polyetheneBag` = '$polyetheneBag', `polyetheneBagWhite` =
+'$polyetheneBagWhite', `carton` = '$carton', `jhall` = '$jhall', `sideRubberSticker` = '$sideRubberSticker',
+`heelRubberSticker` = '$heelRubberSticker', `tungClothSticker` = '$tungClothSticker', `paperBand` = '$paperBand', `paperTag` =
+'$paperTag'";
 $add_q_res = mysqli_query($con, $add_q) or die(mysqli_error($con));
 $_SESSION["message"] = "Materials have been updated.";
 echo ("<script>location.href='viewmaterials.php'</script>");
