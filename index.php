@@ -12,9 +12,26 @@
 </head>
 
 <body style="background: url(../public/pic/background9.jpg) center; font-family: 'Times New Roman', Times, serif;">
-	<?php
-	include '../includes/header.php';
-	?>
+	<div class="navbar navbar-inverse navbar-top" style="background-color: rgba(0, 0, 0, 0.7); display: flex;">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.php" style="font-size: 30px; color: #edeb55; border: 3px solid black;">Mantoes</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li style="font-size: 20px;"><a href="templates/checkout.php" style="color: white;">Checkout</a></li>
+					<li style="font-size: 20px;"><a href="templates/viewmaterials.php" style="color: white;">Available material</a></li>
+					<li style="font-size: 20px;"><a href="templates/change_prices.php" style="color: white;">Prices</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="container">
@@ -32,9 +49,14 @@
 		</div>
 	</div>
 	<br><br><br><br>
-	<?php
-	include '../includes/footer.php';
-	?>
+	<footer class="navbar-bottom" style="background-color: rgba(0, 0, 0, 0.7);">
+		<div class="container">
+			<center>
+				<p style="font-size: 25px; color: white;">Copyright © Mantoes. All Rights Reserved | Contact Us: +91-9889974434</p>
+			</center>
+		</div>
+	</footer>
+
 </body>
 
 </html>
