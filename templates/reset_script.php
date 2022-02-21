@@ -7,7 +7,8 @@ $reset_q = "UPDATE `rawmaterial` SET `leatherFootballGrain` = '0', `leatherLinin
 `19mmTungBinding` = '0', `600mmEyelet` = '0', `hook` = '0', `7mmJamButton` = '0', `150cmShoeLace` = '0', `1.8mmTPSheet` ='0',
 `3.5mmLeatherBoardBanwar` = '0', `13mmTingle` = '0', `softner` = '0', `3mmSocks` = '0', `heel` = '0', `galli` = '0',
 `kachchaSolutionForClosing` = '0',`pakkaSolutionForClosing` = '0', `solutionForMoulding` = '0', `100cmShoeLace` = '0',
-`paperBandAndTag` = '0', `polyetheneBag` = '0', `polyetheneBagWhite` = '0', `carton` = '0', `jhall` = '0'";
+`polyetheneBag` = '0', `polyetheneBagWhite` = '0', `carton` = '0', `jhall` = '0', `sideRubberSticker` = '0',
+`heelRubberSticker` = '0', `tungClothSticker` = '0', `paperBand` = '0', `paperTag` = '0'";
 $reset_q_res = mysqli_query($con, $reset_q) or die(mysqli_error($con));
 $_SESSION["message"] = "Everything has been reset to zero.";
 echo ("<script>location.href='viewmaterials.php'</script>");
