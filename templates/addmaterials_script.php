@@ -2,7 +2,7 @@
 require '../includes/common.php';
 session_start();
 
-$material_q = "SELECT * FROM rawmaterial WHERE id = 1";
+$material_q = "SELECT * FROM inStock WHERE id = 1";
 $material_q_res = mysqli_query($con, $material_q) or die(mysqli_error($con));
 $row = mysqli_fetch_array($material_q_res);
 
@@ -81,7 +81,7 @@ $paperBand = $row['paperBand'] + $paperBand;
 $paperTag = $row['paperTag'] + $paperTag;
 
 
-$add_q = "UPDATE `rawmaterial` SET `leatherFootballGrain` = '$leatherFootballGrain', `leatherLiningSplitCG` =
+$add_q = "UPDATE `inStock` SET `leatherFootballGrain` = '$leatherFootballGrain', `leatherLiningSplitCG` =
 '$leatherLiningSplitCG', `CGThokerGRain` = '$CGThokerGrain', `leatherCrustSweadSplit` = '$leatherCrustSweadSplit', `PUCloth` =
 '$PUCloth', `lycraClothWith3mmFoam` = '$lycraClothWith3mmFoam', `libertyClothWith3mmFoam` = '$libertyClothWith3mmFoam',
 `8mmFoamForCounter` = '$_8mmFoamForCounter', `15mmFoamForCollarBand` = '$_15mmFoamForCollarBand', `1inchHalterNivaad` =

@@ -18,9 +18,6 @@ session_start();
 <body style="background-color: white; font-family: 'Times New Roman', Times, serif;">
   <?php
   include '../includes/header.php';
-  $price_q = "SELECT * FROM rawmaterial WHERE id = 1";
-  $price_q_res = mysqli_query($con, $price_q) or die(mysqli_error($con));
-  $row = mysqli_fetch_array($price_q_res);
   ?>
   <br><br>
   <div class="row">
@@ -33,7 +30,7 @@ session_start();
           <form method="POST" action="changeprices_script.php">
             <b style="font-size: 30px;">Leather Football Grain:</b>
             <div class="form-group">
-              <input style="font-size: 20px;" type="text" name="leatherFootballGrain" class="form-control" value=<?php $row["leatherFootballGrain"] ?> placeholder="Enter in deci-meter">
+              <input style="font-size: 20px;" type="text" name="leatherFootballGrain" class="form-control" value=0 placeholder="Enter in deci-meter">
             </div>
             <b style="font-size: 30px;">Leather Lining Split CG:</b>
             <div class="form-group">
@@ -97,7 +94,7 @@ session_start();
             </div>
             <b style="font-size: 30px;">1.8mm TP Sheet:</b>
             <div class="form-group">
-              <input style="font-size: 20px;" type="text" name="1_8mmTPSheet" class="form-control" value=0 placeholder="Enter number of sheets.">
+              <input style="font-size: 20px;" type="text" name="1.8mmTPSheet" class="form-control" value=0 placeholder="Enter number of sheets.">
             </div>
             <b style="font-size: 30px;">3.5mm Leather Board Banwar:</b>
             <div class="form-group">
@@ -161,6 +158,9 @@ session_start();
             </div>
             <button class="btn btn-default btn-block" style="color: white; background: #1e6f72; font-size: 30px;">Update</button><br>
           </form>
+          <a href="viewprices.php">
+            <button class="btn btn-default btn-block" style="color: white; background: #1e6f72; font-size: 30px;">View current prices</button>
+          </a>
         </div>
       </div>
     </div>
