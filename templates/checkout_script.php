@@ -53,7 +53,7 @@ if ($type == "DVS Boot or Tactical Shoe") {
 `3mmSocks` = '$_3mmSocks', `heel` = '$heel', `galli` = '$galli', `kachchaSolutionForClosing` = '$kachchaSolutionForClosing',
 `pakkaSolutionForClosing` = '$pakkaSolutionForClosing', `solutionForMoulding` = '$solutionForMoulding', `polyetheneBag` = '$polyetheneBag', `polyetheneBagWhite` = '$polyetheneBagWhite', `carton` = '$carton',
 `jhall` = '$jhall', `pairs` = '$pairs', `sideRubberSticker` = '$sideRubberSticker', `heelRubberSticker` = '$heelRubberSticker',
-`tungClothSticker` = '$tungClothSticker', `paperBand` = '$paperBand', `paperTag` = '$paperTag'";
+`tungClothSticker` = '$tungClothSticker', `paperBand` = '$paperBand', `paperTag` = '$paperTag', `type` = '$type'";
   $update_q_res = mysqli_query($con, $update_q) or die(mysqli_error($con));
 
   $leatherFootballGrain = $row1["leatherFootballGrain"] - $leatherFootballGrain;
@@ -138,7 +138,7 @@ if ($type == "DVS Boot or Tactical Shoe") {
 `3mmSocks` = '$_3mmSocks', `heel` = '$heel', `galli` = '$galli', `kachchaSolutionForClosing` = '$kachchaSolutionForClosing',
 `pakkaSolutionForClosing` = '$pakkaSolutionForClosing', `solutionForMoulding` = '$solutionForMoulding', `polyetheneBag` = '$polyetheneBag', `polyetheneBagWhite` = '$polyetheneBagWhite', `carton` = '$carton',
 `jhall` = '$jhall', `pairs` = '$pairs', `sideRubberSticker` = '$sideRubberSticker', `heelRubberSticker` = '$heelRubberSticker',
-`tungClothSticker` = '$tungClothSticker', `paperBand` = '$paperBand', `paperTag` = '$paperTag'";
+`tungClothSticker` = '$tungClothSticker', `paperBand` = '$paperBand', `paperTag` = '$paperTag', `type` = '$type'";
   $update_q_res = mysqli_query($con, $update_q) or die(mysqli_error($con));
 
   $leatherFootballGrain = $row1["leatherFootballGrain"] - $leatherFootballGrain;
@@ -179,4 +179,4 @@ if ($type == "DVS Boot or Tactical Shoe") {
 
 $_SESSION["message"] = "Your shoes have been checked out.";
 
-echo ("<script>location.href='viewmaterials.php'</script>");
+echo ("<script>location.href='prices.php'</script>");
