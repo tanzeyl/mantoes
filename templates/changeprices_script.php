@@ -81,13 +81,13 @@ if (mysqli_real_escape_string($con, $_POST['150cmShoeLace'])) {
   $updatePrice_q = "UPDATE `prices` SET `150cmShoeLace` = '$_150cmShoeLace'";
   $update_q_res = mysqli_query($con, $updatePrice_q) or die(mysqli_error($con));
 }
-if (mysqli_real_escape_string($con, $_POST['1.8mmTPSheet'])) {
-  $_1_8mmTPSheet = mysqli_real_escape_string($con, $_POST['1.8mmTPSheet']);
+if (mysqli_real_escape_string($con, $_POST['TPSheet'])) {
+  $_1_8mmTPSheet = mysqli_real_escape_string($con, $_POST['TPSheet']);
   $updatePrice_q = "UPDATE `prices` SET `1.8mmTPSheet` = '$_1_8mmTPSheet'";
   $update_q_res = mysqli_query($con, $updatePrice_q) or die(mysqli_error($con));
 }
-if (mysqli_real_escape_string($con, $_POST['3.5mmLeatherBoardBanwar'])) {
-  $_3_5mmLeatherBoardBanwar = mysqli_real_escape_string($con, $_POST['3.5mmLeatherBoardBanwar']);
+if (mysqli_real_escape_string($con, $_POST['LeatherBoardBanwar'])) {
+  $_3_5mmLeatherBoardBanwar = mysqli_real_escape_string($con, $_POST['LeatherBoardBanwar']);
   $updatePrice_q = "UPDATE `prices` SET `3.5mmLeatherBoardBanwar` = '$_3_5mmLeatherBoardBanwar'";
   $update_q_res = mysqli_query($con, $updatePrice_q) or die(mysqli_error($con));
 }
@@ -161,9 +161,9 @@ if (mysqli_real_escape_string($con, $_POST['sideRubberSticker'])) {
   $updatePrice_q = "UPDATE `prices` SET `sideRubberSticker` = '$sideRubberSticker'";
   $update_q_res = mysqli_query($con, $updatePrice_q) or die(mysqli_error($con));
 }
-if (mysqli_real_escape_string($con, $_POST['hellRubberSticker'])) {
-  $hellRubberSticker = mysqli_real_escape_string($con, $_POST['hellRubberSticker']);
-  $updatePrice_q = "UPDATE `prices` SET `hellRubberSticker` = '$hellRubberSticker'";
+if (mysqli_real_escape_string($con, $_POST['heelRubberSticker'])) {
+  $heelRubberSticker = mysqli_real_escape_string($con, $_POST['heelRubberSticker']);
+  $updatePrice_q = "UPDATE `prices` SET `heelRubberSticker` = '$heelRubberSticker'";
   $update_q_res = mysqli_query($con, $updatePrice_q) or die(mysqli_error($con));
 }
 if (mysqli_real_escape_string($con, $_POST['tungClothSticker'])) {
@@ -181,4 +181,5 @@ if (mysqli_real_escape_string($con, $_POST['paperTag'])) {
   $updatePrice_q = "UPDATE `prices` SET `paperTag` = '$paperTag'";
   $update_q_res = mysqli_query($con, $updatePrice_q) or die(mysqli_error($con));
 }
-//echo ("<script>location.href='change_prices.php'</script>");
+$_SESSION["message"] = "Prices have been updated.";
+echo ("<script>location.href='viewprices.php'</script>");

@@ -19,6 +19,17 @@ session_start();
   <?php
   include '../includes/header.php';
   ?>
+  <?php
+  if (isset($_SESSION['message'])) {
+  ?>
+    <div class="alert alert-success" role="alert">
+      <center>
+        <h2><?php echo $_SESSION['message']; ?></h2>
+      </center>
+    </div>
+  <?php
+  }
+  ?>
   <br><br>
   <div class="row">
     <div class="col-xs-12 col-md-6 col-md-offset-3">
@@ -94,11 +105,11 @@ session_start();
             </div>
             <b style="font-size: 30px;">1.8mm TP Sheet:</b>
             <div class="form-group">
-              <input style="font-size: 20px;" type="text" name="1.8mmTPSheet" class="form-control" value=0 placeholder="Enter number of sheets.">
+              <input style="font-size: 20px;" type="text" name="TPSheet" class="form-control" value=0 placeholder="Enter number of sheets.">
             </div>
             <b style="font-size: 30px;">3.5mm Leather Board Banwar:</b>
             <div class="form-group">
-              <input style="font-size: 20px;" type="text" name="3_5mmLeatherBoardBanwar" class="form-control" value=0 placeholder="Enter number of sheets.">
+              <input style="font-size: 20px;" type="text" name="LeatherBoardBanwar" class="form-control" value=0 placeholder="Enter number of sheets.">
             </div>
             <b style="font-size: 30px;">13mm Tingle:</b>
             <div class="form-group">
@@ -136,10 +147,6 @@ session_start();
             <div class="form-group">
               <input style="font-size: 20px;" type="text" name="100cmShoeLace" class="form-control" value=0 placeholder="Enter number of pieces.">
             </div>
-            <b style="font-size: 30px;">Paper Band + Tag:</b>
-            <div class="form-group">
-              <input style="font-size: 20px;" type="text" name="paperBandAndTag" class="form-control" value=0 placeholder="Enter number of pieces.">
-            </div>
             <b style="font-size: 30px;">Polyethene Bag:</b>
             <div class="form-group">
               <input style="font-size: 20px;" type="text" name="polyetheneBag" class="form-control" value=0 placeholder="Enter number of pieces.">
@@ -155,6 +162,26 @@ session_start();
             <b style="font-size: 30px;">Jhall:</b>
             <div class="form-group">
               <input style="font-size: 20px;" type="text" name="jhall" class="form-control" value=0 placeholder="Enter number of pieces.">
+            </div>
+            <b style="font-size: 30px;">Side Rubber Sticker:</b>
+            <div class="form-group">
+              <input style="font-size: 20px;" type="text" name="sideRubberSticker" class="form-control" value=0 placeholder="Enter number of pieces.">
+            </div>
+            <b style="font-size: 30px;">Heel Rubber Sticker:</b>
+            <div class="form-group">
+              <input style="font-size: 20px;" type="text" name="heelRubberSticker" class="form-control" value=0 placeholder="Enter number of pieces.">
+            </div>
+            <b style="font-size: 30px;">Tung Cloth Sticker:</b>
+            <div class="form-group">
+              <input style="font-size: 20px;" type="text" name="tungClothSticker" class="form-control" value=0 placeholder="Enter number of pieces.">
+            </div>
+            <b style="font-size: 30px;">Paper Band:</b>
+            <div class="form-group">
+              <input style="font-size: 20px;" type="text" name="paperBand" class="form-control" value=0 placeholder="Enter number of pieces.">
+            </div>
+            <b style="font-size: 30px;">Paper Tag:</b>
+            <div class="form-group">
+              <input style="font-size: 20px;" type="text" name="paperTag" class="form-control" value=0 placeholder="Enter number of pieces.">
             </div>
             <button class="btn btn-default btn-block" style="color: white; background: #1e6f72; font-size: 30px;">Update</button><br>
           </form>

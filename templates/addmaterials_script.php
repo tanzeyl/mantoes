@@ -95,5 +95,21 @@ $add_q = "UPDATE `inStock` SET `leatherFootballGrain` = '$leatherFootballGrain',
 `heelRubberSticker` = '$heelRubberSticker', `tungClothSticker` = '$tungClothSticker', `paperBand` = '$paperBand', `paperTag` =
 '$paperTag'";
 $add_q_res = mysqli_query($con, $add_q) or die(mysqli_error($con));
+
+$add = "UPDATE `stock` SET `leatherFootballGrain` = '$leatherFootballGrain', `leatherLiningSplitCG` =
+'$leatherLiningSplitCG', `CGThokerGRain` = '$CGThokerGrain', `leatherCrustSweadSplit` = '$leatherCrustSweadSplit', `PUCloth` =
+'$PUCloth', `lycraClothWith3mmFoam` = '$lycraClothWith3mmFoam', `libertyClothWith3mmFoam` = '$libertyClothWith3mmFoam',
+`8mmFoamForCounter` = '$_8mmFoamForCounter', `15mmFoamForCollarBand` = '$_15mmFoamForCollarBand', `1inchHalterNivaad` =
+'$_1inchHalterNivaad', `2inchNivaadW` = '$_2inchNivaadW', `19mmTungBinding` = '$_19mmTungBinding', `600mmEyelet` =
+'$_600mmEyelet', `hook` = '$hook', `7mmJamButton` = '$_7mmJamButton', `150cmShoeLace` = '$_150cmShoeLace', `1.8mmTPSheet` =
+'$_1_8mmTPSheet', `3.5mmLeatherBoardBanwar` = '$_3_5mmLeatherBoardBanwar', `13mmTingle` = '$_13mmTingle', `softner` = '$softner',
+`3mmSocks` = '$_3mmSocks', `heel` = '$heel', `galli` = '$galli', `kachchaSolutionForClosing` = '$kachchaSolutionForClosing',
+`pakkaSolutionForClosing` = '$pakkaSolutionForClosing', `solutionForMoulding` = '$solutionForMoulding', `100cmShoeLace` =
+'$_100cmShoeLace', `polyetheneBag` = '$polyetheneBag', `polyetheneBagWhite` =
+'$polyetheneBagWhite', `carton` = '$carton', `jhall` = '$jhall', `sideRubberSticker` = '$sideRubberSticker',
+`heelRubberSticker` = '$heelRubberSticker', `tungClothSticker` = '$tungClothSticker', `paperBand` = '$paperBand', `paperTag` =
+'$paperTag'";
+$add_res = mysqli_query($con, $add) or die(mysqli_error($con));
+
 $_SESSION["message"] = "Materials have been updated.";
 echo ("<script>location.href='viewmaterials.php'</script>");
