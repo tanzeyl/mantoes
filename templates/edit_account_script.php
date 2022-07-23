@@ -5,8 +5,6 @@ $id = mysqli_real_escape_string($con, $_POST['id']);
 $fetch_q = "SELECT * from `accounts` WHERE id = $id";
 $fetch_q_res = mysqli_query($con, $fetch_q) or die(mysqli_error($con));
 $row = mysqli_fetch_array($fetch_q_res);
-// $_SESSION["message"] = "Selected column has been reset to zero.";
-// echo ("<script>location.href='viewmaterials.php'</script>");
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,6 +25,7 @@ $row = mysqli_fetch_array($fetch_q_res);
     include '../includes/header.php';
     $_SESSION["id"] = $row['id'];
     ?>
+    <h1> <?php echo $row['name'] ?> </h1>
     <div class="row" style="border: 10px solid transparent;">
       <div class="col-xs-12 col-md-12">
         <div class="panel panel-default" style="border: 2px solid black;">

@@ -13,4 +13,5 @@ $balance = $toTake - $toGive;
 $update_q = "UPDATE `accounts` SET `balance` = $balance, `toGive` = $toGive, `toTake` = $toTake WHERE `accounts`.`id` = $id";
 $update_q_res = mysqli_query($con, $update_q) or die(mysqli_error($con));
 $_SESSION["message"] = "User account has been updated";
+session_destroy();
 echo ("<script>location.href='accounts.php'</script>");

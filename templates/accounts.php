@@ -21,8 +21,19 @@ $acc_q_res = mysqli_query($con, $acc_q) or die(mysqli_error($con));
       font-size: 20px;
     }
 
-    a {
+    a,
+    button {
       margin-left: 2%;
+    }
+
+    .Total {
+      max-width: 200px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-size: 25px;
+      font-weight: bolder;
+      padding: 10px;
+      color: white;
     }
   </style>
 </head>
@@ -31,6 +42,7 @@ $acc_q_res = mysqli_query($con, $acc_q) or die(mysqli_error($con));
   <center>
     <?php
     include '../includes/header.php';
+    $sum = 0;
     ?>
     <?php
     if (isset($_SESSION['message'])) {
@@ -56,19 +68,30 @@ $acc_q_res = mysqli_query($con, $acc_q) or die(mysqli_error($con));
     ?>
       <tr>
         <td>
-          <?php echo $row['id'] ?>
+          <p><?php $sum = $sum + $row['balance'];
+              echo $row['id'] ?></p>
         </td>
         <td>
-          <?php echo $row['name'] ?>
+          <p><?php echo $row['name'] ?></p>
         </td>
         <td>
-          <?php echo $row['toGive'] ?>
+          <p><?php echo $row['toGive'] ?></p>
         </td>
         <td>
-          <?php echo $row['toTake'] ?>
+          <p><?php echo $row['toTake'] ?></p>
         </td>
         <td>
-          <?php echo $row['balance'] ?>
+          <?php
+          if ($row['balance'] < 0) {
+          ?>
+            <p style="color: red;"><?php echo $row['balance'] ?></p>
+          <?php
+          } else {
+          ?>
+            <p><?php echo $row['balance'] ?></p>
+          <?php
+          }
+          ?>
         </td>
         <td>
           <center>
@@ -83,6 +106,11 @@ $acc_q_res = mysqli_query($con, $acc_q) or die(mysqli_error($con));
     ?>
   </table>
   <a href="addClient.php"><button class="btn btn-success" style="font-size: 20px">Add new client</button></a>
+  <div class="Total">
+    <p>Total balance: <?php echo $sum; ?></p>
+  </div>
+  <br><br>
 </body>
+<?php session_destroy(); ?>
 
 </html>
