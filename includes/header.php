@@ -13,6 +13,7 @@
 				<li style="font-size: 20px;"><a href="checkout.php" style="color: white;">Checkout</a></li>
 				<li style="font-size: 20px;"><a href="viewmaterials.php" style="color: white;">Available material</a></li>
 				<li style="font-size: 20px;"><a href="change_prices.php" style="color: white;">Prices</a></li>
+				<li style="font-size: 20px;"><a href="accounts.php" style="color: white;">Accounts</a></li>
 			</ul>
 		</div>
 	</div>
