@@ -1,20 +1,16 @@
-<div class="navbar navbar-inverse navbar-top" style="background-color: rgba(0, 0, 0, 0.7); display: flex;">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="index.php" style="font-size: 30px; color: #edeb55; border: 3px solid black;">Mantoes</a>
+<center>
+	<div class="row HeaderRow" style="margin: 2%; font-size: 25px;">
+		<div class="col-xs-12 col-lg-2 HeaderColumn">
+			<a href="index.php"><button class="btn-lg btn-success">Home</button></a>
 		</div>
-		<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-right">
-				<li style="font-size: 20px;"><a href="checkout.php" style="color: white;">Checkout</a></li>
-				<li style="font-size: 20px;"><a href="viewmaterials.php" style="color: white;">Available material</a></li>
-				<li style="font-size: 20px;"><a href="change_prices.php" style="color: white;">Prices</a></li>
-				<li style="font-size: 20px;"><a href="accounts.php" style="color: white;">Accounts</a></li>
-			</ul>
+		<div class="col-xs-12 col-lg-2 HeaderColumn">
+			<a href="change_prices.php"><button class="btn-lg btn-success">Prices</button></a>
+		</div>
+		<div class="col-xs-12 col-lg-2 HeaderColumn">
+			<a href="viewmaterials.php"><button class="btn-lg btn-success">Available Materials</button></a>
+		</div>
+		<div class="col-xs-12 col-lg-2 HeaderColumn">
+			<a href="accounts.php"><button class="btn-lg btn-success">Accounts</button></a>
 		</div>
 	</div>
-</div>
+</center>
